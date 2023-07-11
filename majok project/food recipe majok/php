@@ -1,0 +1,19 @@
+<?php
+  // PHP code to process form submissions or perform other tasks
+  
+  // Example PHP code: Get the current date
+  $currentDate = date("Y-m-d");
+
+  // Example PHP code: Handle form submission
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Process the form data
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    
+    // Perform further actions (e.g., store data in a database, send emails, etc.)
+    
+    // Redirect to a thank you page after form submission
+    header("Location: thank-you.php");
+    exit();
+  }
+?>
